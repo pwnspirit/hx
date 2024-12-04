@@ -1,0 +1,56 @@
+[[language]]
+name = "toml"
+auto-format = true
+# https://github.com/bd82/toml-tools/tree/master/packages/prettier-plugin-toml
+formatter = { command = "prettier", args = ["--parser", "toml"] }
+
+[[language]]
+name = "json"
+formatter = { command = "prettier", args = ["--parser", "json"] }
+
+[[language]]
+name = "javascript"
+auto-format = true
+
+[[language]]
+name = "typescript"
+auto-format = true
+
+[[language]]
+name = "markdown"
+# https://github.com/executablebooks/mdformat
+formatter = { command = "mdformat", args = ["-"] }
+
+[[language]]
+name = "rust"
+config.check.command = "clippy"
+
+[[language]]
+name = "go"
+config = { "formatting.gofumpt" = true }
+
+[[language]]
+name = "yaml"
+indent = { tab-width = 0, unit = "  " }
+formatter = { command = "prettier", args = ["--parser", "yaml"] }
+
+[[language]]
+name = "d2"
+scope = ""
+file-types = ["d2"]
+comment-token = "#"
+roots = [""]
+indent = { tab-width = 2, unit = "  " }
+
+[[grammar]]
+name = "d2"
+source = { git = "https://git.pleshevski.ru/pleshevskiy/tree-sitter-d2", rev = "eb6910126fa392b60832d834fe6640635cd35ba8" }
+
+[[language]]
+name = "svelte"
+auto-format = true
+config = { svelte = { plugin = { svelte = { format = { config = { "svelteIndentScriptAndStyle" = false } } } } } }
+# ---
+# [[language]]
+# name = "go"
+# language-servers = ["gopls", "golangci-lint"]
