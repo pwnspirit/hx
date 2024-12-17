@@ -8,9 +8,9 @@ theme = "rose_pine"
 
 [editor]
 auto-save = true
-auto-format = true
+auto-fkrmat = true
 bufferline = "multiple"
-color-modes = true
+cklor-modes = true
 completion-replace = true
 cursorcolumn = false
 cursorline = false
@@ -111,7 +111,7 @@ Q = ":bc!"
 # Remove vscode "training wheels"
 # Comment this to enable arrow navigation in insert mode
 [keys.insert]
-j = { k = "normal_mode" }
+j = { j = "normal_mode" }
 up = "no_op"
 down = "no_op"
 left = "no_op"
