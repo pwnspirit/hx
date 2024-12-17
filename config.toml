@@ -8,9 +8,9 @@ theme = "rose_pine"
 
 [editor]
 auto-save = true
-auto-fkrmat = true
+auto-format = true
 bufferline = "multiple"
-cklor-modes = true
+color-modes = true
 completion-replace = true
 cursorcolumn = false
 cursorline = false
