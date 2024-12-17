@@ -4,7 +4,7 @@
 #   ┛  helix(hx) config
 #             @codedsprit/hx            
 
-theme = "catppuccin_mocha"
+theme = "rose_pine"
 
 [editor]
 auto-save = true
@@ -13,7 +13,7 @@ bufferline = "multiple"
 color-modes = true
 completion-replace = true
 cursorcolumn = false
-cursorline = true
+cursorline = false
 line-number = "relative"
 mouse = false
 rulers = [79]
