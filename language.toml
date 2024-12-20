@@ -54,3 +54,9 @@ config = { svelte = { plugin = { svelte = { format = { config = { "svelteIndentS
 # [[language]]
 # name = "go"
 # language-servers = ["gopls", "golangci-lint"]
+
+[use-grammars]
+only = [
+  "rust", "toml", # ...
+  "markdown", "markdown-inline"
+]
