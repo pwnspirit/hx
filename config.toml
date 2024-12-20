@@ -4,7 +4,7 @@
 #   ┛  helix(hx) config
 #             @codedsprit/hx            
 
-theme = "rose_pine"
+theme = "catppuccin_mocha"
 
 [editor]
 auto-save = true
