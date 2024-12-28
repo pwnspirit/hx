@@ -23,7 +23,12 @@ formatter = { command = "mdformat", args = ["-"] }
 
 [[language]]
 name = "rust"
-config.check.command = "clippy"
+language-servers = ["rust-analyzer" ]
+formatter = { command = "rustfmt" }
+auto-format = true
+indent = { tab-width = 4, unit = "t" }
+[language-server.rust-analyzer]
+command = "rust-analyzer"
 
 [[language]]
 name = "go"
