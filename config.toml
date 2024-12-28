@@ -4,11 +4,12 @@
 #   ┛  helix(hx) config
 #             @codedsprit/hx            
 
-theme = "gruvbox_mix_dark"
+theme = "catppuccin_mocha"
 
 [editor]
 auto-save = true
 auto-format = true
+auto-completion = true
 bufferline = "multiple"
 color-modes = true
 completion-replace = true
