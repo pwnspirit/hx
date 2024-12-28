@@ -1,15 +1,32 @@
+<!--
 ```nix
 CodedSprit's helix config
 ```
-<img width="1680" alt="Screenshot helix" src="https://github.com/codedsprit/hx/blob/assets/helix-config.png" />
+-->
+<img widht="1200" alt="Screenshot from 2024-12-28 09-38-46" src="https://github.com/user-attachments/assets/cf53819b-caeb-45fa-bacb-84a2264cebfd" />
+<img width="1200" alt="Screenshot from 2024-12-28 10-03-07" src="https://github.com/user-attachments/assets/56e81c77-3d4b-46e7-9d1d-d07bb7bc6d26" />
 
-----
+
+<img width="1200" alt="aqua" src="https://github.com/user-attachments/assets/4c8ae7f9-34f1-4f55-b35f-ac755ab3ee6c" />
+<br><br>
 
 ```bash
-git clone https://github.com/codesprit/hx ~/.config/helix
-
+git clone https://github.com/codedsprit/hx ~/.config/helix
+# health check
+hx --health
 ```
----- 
+
+## 🍦 Tips
+
+- Add ***``X``*** [**``language server``**](https://docs.helix-editor.com/languages.html) in [**``language.toml``**](https://github.com/codedsprit/hx/blob/main/language.toml)
+- You can also consider checking [**``helix-docs``**](https://docs.helix-editor.com/title-page.html) 
+```toml
+[[language]]
+name = "rust"
+language-servers = ["rust-analyzer" ] # lsp for rust-lang
+formatter = { command = "rustfmt" }   # formatter
+```
+<br>
 
 <p align="center"><img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/footers/gray0_ctp_on_line.svg?sanitize=true" /></p>
 <p align="center">Copyright &copy; 2024 - present <a href="https://github.com/codedsprit" target="_blank"> codedsprit.xyz <a> 🌷</a> 
