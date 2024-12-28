@@ -4,7 +4,7 @@
 #   ┛  helix(hx) config
 #             @codedsprit/hx            
 
-theme = "catppuccin_mocha"
+theme = "gruvbox_mix_dark"
 
 [editor]
 auto-save = true
