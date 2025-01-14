@@ -5,6 +5,10 @@ auto-format = true
 formatter = { command = "prettier", args = ["--parser", "toml"] }
 
 [[language]]
+name = "c"
+formatter = { command = "clang-format", args = ["--assume-filename", "%file"] }
+
+[[language]]
 name = "json"
 formatter = { command = "prettier", args = ["--parser", "json"] }
 
