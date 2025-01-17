@@ -59,6 +59,12 @@ source = { git = "https://git.pleshevski.ru/pleshevskiy/tree-sitter-d2", rev = "
 name = "svelte"
 auto-format = true
 config = { svelte = { plugin = { svelte = { format = { config = { "svelteIndentScriptAndStyle" = false } } } } } }
+
+[[language]]
+name = "typst"
+auto-fomat = true
+formatter.command = "typstyle"
+
 # ---
 # [[language]]
 # name = "go"
