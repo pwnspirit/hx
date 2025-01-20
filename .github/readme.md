@@ -18,6 +18,7 @@ hx --health
 
 ## 🍦 Tips
 
+- Helix ***``Runtimes``*** are essential, you can check this [**``here``**](https://docs.helix-editor.com/building-from-source.html).
 - Add ***``X``*** [**``language server``**](https://docs.helix-editor.com/languages.html) in [**``language.toml``**](https://github.com/codedsprit/hx/blob/main/language.toml)
 - You can also consider checking [**``helix-docs``**](https://docs.helix-editor.com/title-page.html) 
 ```toml
