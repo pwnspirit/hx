@@ -22,8 +22,7 @@ auto-format = true
 
 [[language]]
 name = "markdown"
-# https://github.com/executablebooks/mdformat
-formatter = { command = "mdformat", args = ["-"] }
+formatter = { command = "dprint", args = ["fmt", "--stdin", "md"]}
 
 [[language]]
 name = "rust"
@@ -31,6 +30,7 @@ language-servers = ["rust-analyzer" ]
 formatter = { command = "rustfmt" }
 auto-format = true
 indent = { tab-width = 4, unit = "t" }
+
 [language-server.rust-analyzer]
 command = "rust-analyzer"
 
