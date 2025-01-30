@@ -16,6 +16,13 @@ git clone https://github.com/codedsprit/hx ~/.config/helix
 hx --health
 ```
 
+<hr>
+
+```bash
+nix develop github:codedsprit/hx
+```
+
+
 ## 🍦 Tips
 
 - Helix ***``Runtimes``*** are essential, you can check this [**``here``**](https://docs.helix-editor.com/building-from-source.html).
