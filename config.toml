@@ -17,7 +17,7 @@ cursorcolumn = false
 cursorline = false
 line-number = "relative"
 mouse = true
-rulers = [79]
+#rulers = [79]
 true-color = true
 
 [editor.whitespace.render]
