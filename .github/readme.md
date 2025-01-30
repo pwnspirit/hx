@@ -15,9 +15,6 @@ git clone https://github.com/codedsprit/hx ~/.config/helix
 # health check
 hx --health
 ```
-
-<hr>
-
 ```bash
 nix develop github:codedsprit/hx
 ```
