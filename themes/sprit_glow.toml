@@ -1,0 +1,39 @@
+"ui.background" = { bg = "#1E1A2E" }
+"ui.selection" = { bg = "#342A4F" }
+"ui.linenr" = { fg = "#7A6F92" }
+"ui.linenr.selected" = { fg = "#F3A35C", bg = "#2A2340" }
+
+"ui.statusline" = { fg = "#EDEDF2", bg = "#1E1A2E" }
+"ui.statusline.inactive" = { fg = "#7A6F92", bg = "#1E1A2E" }
+"ui.statusline.normal" = { fg = "#1E1A2E", bg = "#85E0A3" }
+"ui.statusline.insert" = { fg = "#1E1A2E", bg = "#9AC8E2" }
+"ui.statusline.select" = { fg = "#1E1A2E", bg = "#F3A35C" }
+
+"ui.popup" = { bg = "#1E1A2E", fg = "#EDEDF2" }
+"ui.help" = { bg = "#1E1A2E", fg = "#E57DD2" }
+
+"comment" = { fg = "#7A6F92" }
+"string" = { fg = "#85E0A3" }
+"constant" = { fg = "#E57DD2" }
+"variable" = { fg = "#F3A35C" }
+"keyword" = { fg = "#F3A35C" }
+"operator" = { fg = "#E57DD2" }
+"function" = { fg = "#9AC8E2" }
+"type" = { fg = "#9AC8E2" }
+"builtin" = { fg = "#E57DD2" }
+"attribute" = { fg = "#F3A35C" }
+"namespace" = { fg = "#85E0A3" }
+"special" = { fg = "#E57DD2" }
+"diagnostic" = { fg = "#F3A35C" }
+"hint" = { fg = "#85E0A3" }
+
+[palette]
+background = "#1E1A2E"
+accent1    = "#E57DD2"
+accent2    = "#F3A35C"
+accent3    = "#9AC8E2"
+accent4    = "#85E0A3"
+text       = "#EDEDF2"
+dimmed     = "#7A6F92"
+highlight  = "#342A4F"
+popup_bg   = "#2A2340"
