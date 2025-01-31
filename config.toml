@@ -39,26 +39,9 @@ git-ignore = true
 git-global = false
 
 [editor.statusline]
-left = [
-  "mode",
-  "spacer",
-  "version-control",
-  "spacer",
-  "separator",
-  "file-name",
-  "file-modification-indicator"
-]
+left = []
 right = [
-  "spinner",
-  "spacer",
-  "workspace-diagnostics",
-  "separator",
-  "spacer",
-  "diagnostics",
-  "position",
-  "file-encoding",
-  "file-line-ending",
-  "file-type"
+   "file-type"
 ]
 separator = "╎"
 mode.normal = "NORMAL"
