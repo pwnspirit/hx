@@ -17,6 +17,14 @@ name = "javascript"
 auto-format = true
 
 [[language]]
+name = "python"
+auto-format = true
+
+[language-server.pylsp.config.pylsp]
+plugins.ruff.enabled = true
+plugins.black.enabled = true
+
+[[language]]
 name = "typescript"
 auto-format = true
 
@@ -26,13 +34,32 @@ formatter = { command = "dprint", args = ["fmt", "--stdin", "md"]}
 
 [[language]]
 name = "rust"
-language-servers = ["rust-analyzer" ]
-formatter = { command = "rustfmt" }
+scope = "source.rust"
+injection-regex = "rs|rust"
+file-types = ["rs"]
+roots = ["Cargo.toml", "Cargo.lock"]
+shebangs = ["rust-script", "cargo"]
 auto-format = true
-indent = { tab-width = 4, unit = "t" }
+comment-tokens = ["//", "///", "//!"]
+block-comment-tokens = [
+  { start = "/*", end = "*/" },
+  { start = "/**", end = "*/" },
+  { start = "/*!", end = "*/" },
+]
+language-servers = [ "rust-analyzer" ]
+indent = { tab-width = 4, unit = "    " }
+persistent-diagnostic-sources = ["rustc", "clippy"]
 
 [language-server.rust-analyzer]
 command = "rust-analyzer"
+
+[language-server.rust-analyzer.config]
+inlayHints.bindingModeHints.enable = true
+inlayHints.closingBraceHints.minLines = 10
+inlayHints.closureReturnTypeHints.enable = "with_block"
+inlayHints.discriminantHints.enable = "fieldless"
+inlayHints.lifetimeElisionHints.enable = "skip_trivial"
+inlayHints.typeHints.hideClosureInitialization = false
 
 [[language]]
 name = "go"
@@ -70,8 +97,6 @@ formatter.command = "typstyle"
 # name = "go"
 # language-servers = ["gopls", "golangci-lint"]
 
-[use-grammars]
-only = [
-  "rust", "toml", # ...
-  "markdown", "markdown-inline"
-]
+[[grammar]]
+name = "rust"
+source = { git = "https://github.com/tree-sitter/tree-sitter-rust", rev = "1f63b33efee17e833e0ea29266dd3d713e27e321" }
