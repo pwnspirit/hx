@@ -1,0 +1,120 @@
+#     ┓   ┓     • 
+# ┏┏┓┏┫┏┓┏┫┏┏┓┏┓┓╋
+# ┗┗┛┗┻┗ ┗┻┛┣┛┛ ┗┗
+#           ┛ helix(hx) config
+#                    @codedsprit/hx            
+
+theme = "non_background"
+
+[editor]
+auto-save = true
+auto-format = true
+auto-completion = true
+bufferline = "multiple"
+color-modes = true
+completion-replace = true
+cursorcolumn = false
+cursorline = false
+line-number = "relative"
+mouse = true
+#rulers = [79]
+true-color = true
+
+
+
+[editor.whitespace.render]
+space = "none"
+nbsp = "none"
+tab = "none"
+newline = "none"
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+tab = "→"
+newline = "⏎"
+tabpad = "·" # Tabs will look like "→···" (depending on tab width)
+
+[editor.file-picker]
+hidden = false
+git-ignore = true
+git-global = false
+
+[editor.statusline]
+left = []
+right = [
+   "file-type"
+]
+separator = "╎"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.indent-guides]
+render = true
+character = "╎" # Some characters that work well: "▏", "┆", "┊", "╎"
+skip-levels = 0
+
+[editor.soft-wrap]
+enable = true
+max-wrap = 10 # increase value to reduce forced mid-word wrapping
+max-indent-retain = 40
+
+[keys.normal]
+# esc is remapped to capslock locally
+esc = ["collapse_selection", "keep_primary_selection", ":w"]
+C-v = "vsplit"
+C-h = "jump_view_left"
+C-j = "jump_view_down"
+C-k = "jump_view_up"
+C-l = "jump_view_right"
+"C-," = "goto_previous_buffer"
+"C-." = "goto_next_buffer"
+"K" = "insert_newline"
+# Move line up/down using A-k, A-j
+"A-k" = [
+  "extend_to_line_bounds",
+  "delete_selection",
+  "move_line_up",
+  "paste_before"
+]
+"A-j" = [
+  "extend_to_line_bounds",
+  "delete_selection",
+  "move_line_down",
+  "paste_before"
+]
+
+[keys.normal.g]
+q = ":bc"
+Q = ":bc!"
+
+# Remove vscode "training wheels"
+# Comment this to enable arrow navigation in insert mode
+[keys.insert]
+j = { j = "normal_mode" }
+"C-space" = "completion"
+A-b = ["move_prev_word_start", "collapse_selection"]
+A-f = ["move_next_word_end", "move_char_right"]
+C-a = "goto_first_nonwhitespace"
+C-b = "move_char_left"
+C-d = "delete_char_forward"
+C-e = "goto_line_end_newline"
+C-f = "move_char_right"
+C-n = "move_line_down"
+C-p = "move_line_up"
+
+
+# Config Mode
+[keys.normal."C-backspace"]
+r = [":config-reload", ":reload-all"]
+o = ":config-open"
+l = ":o ~/.config/helix/languages.toml"
+C-g = [":new", ":insert-output lazygit", ":buffer-close", ":redraw"]
